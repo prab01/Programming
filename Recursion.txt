@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+int power(int m, int n)
+{
+    if(n==0)
+    return 1;
+    if(n%2==0)
+    return pow(m*m,n/2);
+    else
+    return pow(m*m,n-1/2)*m;
+}
+int main()
+{
+    int num,p,result;
+    printf("Enter the number for which power is to find:\n");
+    scanf("%d",&num);
+    printf("Enter the power of the number :\n");
+    scanf("%d",&p);
+    result=power(num,p);
+    printf("Answer for the above computation is : %d",result);
+    return 0;
+    
+    
+}
