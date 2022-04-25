@@ -1,0 +1,24 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr[]={10,20,30,40,50};
+	    int ans=BinarySearch(arr,0,5,40);
+		System.out.println(ans);
+	}
+	static int BinarySearch(int []arr,int low,int high,int key)
+	{
+	    int l=0;
+	    int h=arr.length-1;
+	    while(l<=h)
+	    {
+	        int mid=l+(h-l)/2;
+	        if(arr[mid]==key)
+	        return mid;
+	        else if(arr[mid]>key)
+	        h=mid-1;
+	        else
+	        l=mid+1;
+	    }
+	    return -1;
+	}
+}
