@@ -1,0 +1,41 @@
+// class
+#include <iostream>
+
+using namespace std;
+
+class animal
+{
+    public :
+    int x=10;
+};
+
+class dog:public animal
+{
+    
+};
+
+int main()
+{
+     dog d;
+     cout<<d.x;
+    return 0;
+}
+
+// structure
+
+#include<iostream>
+using namespace std;
+struct animal
+{
+    int x=10;
+};
+struct dog:animal
+{
+    
+};
+int main()
+{
+    dog d;
+    cout<<d.x;
+    return 0;
+}
