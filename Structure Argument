@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+struct Point
+{
+    int x;
+    int y;
+    
+};
+void print(Point p)
+{
+    cout<<p.x<<" "<<p.y<<endl;
+    p.x=30;
+    cout<<p.x<<" "<<p.y<<endl;
+}
+int main()
+{
+    Point p={10,20};
+    print(p);
+    cout<<p.x;
+
+    return 0;
+}
