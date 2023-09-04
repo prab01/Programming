@@ -1,0 +1,29 @@
+
+// Structre passing as reference optimized the code reduces space as it does not create a copy it creates an alias and to not modify the code we add the keyword const to it.
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+struct student
+{
+    int rollno;
+    int age;
+    string name;
+    string address;
+};
+void display(const student &s)
+{
+    cout<<s.rollno<<" "<<s.age<<" "<<s.name<<" "<<s.address<<endl;
+}
+int main()
+{
+    student s {1,22,"Prateek","DSA"};
+    display(s);
+   
+   return 0;
+    
+}
