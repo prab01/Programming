@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+class Rectangle
+{
+    public:
+    int l;
+    int b;
+    
+    int area()
+    {
+        return (l*b);
+    }
+    int perimeter()
+    {
+        return (2*(l+b));
+    }
+};
+
+int main()
+{
+    Rectangle *q=new Rectangle();
+    q->l=10;
+    q->b=20;
+    cout<<q->area();
+}
