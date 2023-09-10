@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+class Test
+{
+    public:
+    void fun1()
+    {
+        cout<<"Inline function"<<endl;
+    }
+   inline void fun2();
+    
+};
+
+void Test::fun2()
+{
+    cout<<"It is also Inline function";
+}
+
+
+int main()
+{
+    Test a;
+    a.fun1();
+    a.fun2();
+}
